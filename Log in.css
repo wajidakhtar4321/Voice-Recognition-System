@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#im2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+#login {
+    display: flex;
+    height: 100vh;
+    width: 98.9vw;
+    justify-content: center;
+    text-align: center;
+
+    /* background-color: conic-gradient(red, blue, yellow, green); */
+}
+
+#im1 {
+    margin-top: 23vh;
+    opacity: 0.5;
+    height: 65%;
+    width: 45%;
+    border-radius: 20px;
+    border: 3px solid white;
+
+}
+
+#page {
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    /* margin-left: 11vw; */
+    color: rgb(10, 232, 73);
+    /* background-color: #8d9869; */
+    padding: 30px;
+    margin-left: 30vw;
+    margin-top: 15vh;
+
+    display: flex;
+}
+
+#h2 {
+
+    text-align: center;
+    margin-top: 5vh;
+
+    color: rgb(153, 244, 216);
+
+}
+
+.input-group1 {
+    /* display: flex; */
+    margin-top: 120px;
+
+
+}
+
+.input-group1>#t1 {
+    margin-right: 8vw;
+    font-size: large;
+    color: black;
+}
+
+.input-group2>#t2 {
+    margin-right: 8vw;
+    font-size: large;
+    color: black
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 7.5px;
+    border: 1px solid #20c12a;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#button1 {
+    display: flex;
+    width: 30%;
+    padding: 3px;
+    gap: 5px;
+    /* background-color: #81db84; */
+    color: red;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-top: 12.5vh; */
+    margin-top: 9.3vh;
+    margin-left: 8.5vw;
+    text-decoration: none;
+}
+
+#button1:hover {
+    background-color: blue;
+}
+
+button {
+
+    display: flex;
+    width: 50%;
+    padding: 8px;
+    background-color: #6779ed;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+    margin-top: 3vh;
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+#page>h4 {
+    position: absolute;
+    /* display: flex; */
+    font-style: italic;
+    /* color: white; */
+    color: white;
+    margin-top: 59vh;
+    margin-left: 4vw;
+}

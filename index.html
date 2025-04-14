@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recognition System With Chat-Boat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="marquee">
+            <marquee direction="right" scrollamount="8" behavior="alternate">
+                <h1><i>Welcome to our Page</i></h1>
+            </marquee>
+        </div>
+        <div id="navbar">
+
+            <div id="logo">
+                <img src="images/images1.jpg" />
+            </div>
+            <div id="list">
+                <li><a href="home">Wajid Chat Boat</a></li>
+                <!-- <li><a href="About">About</a></li>
+                <li><a href="Chatbot">Chatbot</a></li>
+                <li><a href="Contact"> Contact</a></li> -->
+            </div>
+            <div id="list2">
+                <!-- <li><a href="Sign Up">Sign Up</a></li> -->
+                <li><a href="Log in/Log in.html">Log in</a></li>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="slider">
+
+                <img id="im" src="images/images1.jpg" />
+
+                <div id="radio">
+                    <input id="r1" type="radio" name="cheked radio" checked onclick="check('0')" />
+                    <input id="r2" type="radio" name="cheked radio" checked onclick="check('1')" />
+                    <input id="r3" type="radio" name="cheked radio" checked onclick="check('2')" />
+                    <input id="r4" type="radio" name="cheked radio" checked onclick="check('3')" />
+                </div>
+
+            </div>
+
+            <div id="login">
+                <img id="im1" src="LOg in/image6.jpg" />
+
+                <div id="page">
+                    <h1 id="h2">Log In</h1>
+                    <h4>Don't have an account? </h4>
+                    <form id="loginForm">
+                        <div class="input-group1">
+                            <label id="t1" for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                            <p id="username-error" class="error-message"></p> <!-- Error message for username -->
+                        </div>
+                        <br>
+
+
+
+                        <div class="input-group2">
+                            <label id="t2" for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                            <p id="password-error" class="error-message"></p> <!-- Error message for password -->
+                        </div>
+                        <br>
+
+                        <!-- Corrected button tags -->
+                        <button type="submit">Log In</button>
+                        <!-- <a id="button1" href="Sign Up">Sign Up</a> -->
+                        <!-- <button type="button" id="signupBtn">Sign Up</button> -->
+                        <!-- Button for sign-up, doesn't submit -->
+                        <!-- <button2 type="submit">Log In</button2> -->
+                        <!-- <button1 type="Sign Up">Sign Up</button1> -->
+                    </form>
+                    <p id="error-message" class="error-message"></p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div id="chat">
+            <button id="mic"><i class="fa fa-microphone"></i></button>
+            <h1 id="data">Click Here To Speak</h1>
+        </div>
+        <!-- <div id="footer">
+
+        </div> -->
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        function forword_z() {
+            if (pos < array.length - 1) {
+                pos++;
+            }
+            else {
+                pos = 0;
+            }
+            document.getElementById('im').src = array[pos];
+            if (pos == 0) {
+                document.getElementById('r1').checked = true;
+                document.getElementById('r2').checked = false;
+                document.getElementById('r3').checked = false;
+                document.getElementById('r4').checked = false;
+            }
+            if (pos == 1) {
+                document.getElementById('r1').checked = false;
+                document.getElementById('r2').checked = true;
+                document.getElementById('r3').checked = false;
+                document.getElementById('r4').checked = false;
+            }
+            if (pos == 2) {
+                document.getElementById('r1').checked = false;
+                document.getElementById('r2').checked = false;
+                document.getElementById('r3').checked = true;
+                document.getElementById('r4').checked = false;
+            }
+            if (pos == 3) {
+                document.getElementById('r1').checked = false;
+                document.getElementById('r2').checked = false;
+                document.getElementById('r3').checked = false;
+                document.getElementById('r4').checked = true;
+            }
+
+            setTimeout(forword_z, 2000);
+        }
+        forword_z();
+    </script>
+
+</body>
+
+</html>
