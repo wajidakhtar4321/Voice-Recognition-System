@@ -14,4 +14,7 @@ You can login by just entering some dummy character in email and password fields
 ##  Tech Stack  
 - HTML → Page structure and login design  
 - CSS → Styling and responsive UI  
-- JavaScript → Voice recognition logic with Web Speech API  
+- JavaScript → Voice recognition logic with Web Speech API
+
+## Deployed on Netlify
+Check out the link:https://wajidakhtar4321.github.io/Voice-Recognition-System/
