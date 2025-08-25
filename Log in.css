@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+
+    text-align: center;
+}
+
 #im2 {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     opacity: 0.4;
+    display: flex;
 }
 
 #login {
@@ -18,8 +24,9 @@
     justify-content: center;
     text-align: center;
 
-    /* background-color: conic-gradient(red, blue, yellow, green); */
+
 }
+
 
 #im1 {
     margin-top: 23vh;
@@ -28,6 +35,7 @@
     width: 45%;
     border-radius: 20px;
     border: 3px solid white;
+
 
 }
 
@@ -92,13 +100,13 @@ input {
     width: 30%;
     padding: 3px;
     gap: 5px;
-    /* background-color: #81db84; */
+
     color: red;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    /* margin-top: 12.5vh; */
+
     margin-top: 9.3vh;
     margin-left: 8.5vw;
     text-decoration: none;
@@ -145,4 +153,64 @@ button:hover {
     color: white;
     margin-top: 59vh;
     margin-left: 4vw;
+}
+
+@media(max-width:1024px) {
+    #login {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #im1 {
+        width: 70%;
+        margin-bottom: 1.5rem
+    }
+
+    #page {
+        width: 90%;
+        max-width: 500px
+    }
+}
+
+@media(max-width:768px) {
+    #h2 {
+        font-size: 1.6rem
+    }
+
+    #page>h4 {
+        font-size: .9rem
+    }
+
+    input {
+        font-size: 13px
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px
+    }
+}
+
+@media(max-width:480px) {
+    #h2 {
+        font-size: 1.3rem
+    }
+
+    #page {
+        padding: 1rem
+    }
+
+    #page>h4 {
+        font-size: .85rem;
+        margin-bottom: 1rem
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px
+    }
+
+    #im1 {
+        display: none
+    }
 }
