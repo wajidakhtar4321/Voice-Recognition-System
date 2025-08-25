@@ -53,7 +53,7 @@ function speakThis(message) {
         speech.text = final;
     }
 
-    else if (message.includes('youtube')) {
+    else if (message.includes('open youtube')) {
         window.open("https://www.youtube.com/", "_blank");
         const final = "Opening Youtube";
         speech.text = final;
@@ -64,12 +64,12 @@ function speakThis(message) {
         const final = "Opening instagram";
         speech.text = final;
     }
-    else if (message.includes('calculator')) {
+    else if (message.includes('open calculator')) {
         window.open('Calculator:///')
         const final = "Opening Calculator";
         speech.text = final;
     }
-    else if (message.includes('whatsapp')) {
+    else if (message.includes('open whatsapp')) {
         window.open('Whatsapp:///')
         const final = "Opening Whatsapp";
         speech.text = final;
@@ -97,7 +97,7 @@ function speakThis(message) {
 
     window.speechSynthesis.speak(speech);
 }
-const array = ['images/images1.jpg', 'Log in/images2.jpg', 'images/images3.jpg', 'images/images.4.jpg'];
+const array = ['images/images1.jpg', 'images/images2.jpg', 'images/images3.jpg', 'images/images.4.jpg'];
 let pos = 0;
 function forword() {
     if (pos < array.length - 1) {
